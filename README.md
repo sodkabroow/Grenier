@@ -43,3 +43,6 @@ python bot.py
 
 ## Внимание
 Написан на коленке, да и думать над его будущим не охота
+
+### Благодарность
+Спасибо [huggingface](https://huggingface.co/) за предоставление api, а [stablityai](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) за хороший ии
