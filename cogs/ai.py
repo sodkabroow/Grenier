@@ -29,7 +29,7 @@ class Ai(commands.Cog):
             return
         
         elif imageBytes == b"1":
-            embed.description = "Произошла ошибка при запросе, пожалуйста, попробуйте снова или сообщите об этом создателю",
+            embed.description = "Произошла ошибка при запросе, пожалуйста, попробуйте снова или сообщите об этом создателю"
             await originalMsg.edit(embed=embed)
             
             return
