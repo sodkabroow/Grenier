@@ -69,6 +69,25 @@ async def default_ping(ctx):
     
     await ctx.reply(embed=embed)
     
+# хендлер ерроров
+@bot.event
+async def on_command_error(ctx, err):
+    embed = disnake.Embed(
+        title="Error",
+        color=disnake.Color.from_rgb(255, 30, 0)
+    )
+    
+    # кулдаун на команду
+    if isinstance(err, commands.CommandOnCooldown):
+        embed.description = f"Подождите ``{err.retry_after:.0f}`` секунд использованием команды \"{ctx.command.name}\""
+    
+    # всё что не относится к прошлому
+    else:
+        embed.description= "Произошла непредвиденная ошибка, обратитесь к создателю за помощью"
+        
+    # отправление в конец
+    logging.error(f"Произошла ошибка: {err}")
+    await ctx.reply(embed=embed)
     
 # запуск
 bot.run(configs["TOKEN"])
