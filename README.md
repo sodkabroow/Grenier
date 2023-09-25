@@ -6,9 +6,7 @@
 ```bash
 git clone https://github.com/sodkahakann/Grenier.git
 ```
-Дальше переходите к настройке
-
-Иначе нажмите на Code -> Download ZIP, распакуйте и переходите к настройке
+Дальше переходите к настройке, иначе нажмите на Code -> Download ZIP, распакуйте и переходите к настройке
 
 ## Настройка
 Для начала в папке с ботом создайте ещё одну папку называемой config, в ней создайте 2 файла
@@ -34,8 +32,7 @@ pip install -r requirements.txt
 ```
 
 ## Запуск
-[Пригласите бота](https://discordpy.readthedocs.io/en/stable/discord.html#inviting-your-bot)
-Для linux систем [создайте и перейдите в venv](https://docs.python.org/3/library/venv.html)(если требуется) и пропишите
+[Пригласите бота](https://discordpy.readthedocs.io/en/stable/discord.html#inviting-your-bot), для linux систем [создайте и перейдите в venv](https://docs.python.org/3/library/venv.html)(если требуется) и пропишите
 ```bash
 python bot.py
 ```
