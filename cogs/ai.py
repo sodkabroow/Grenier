@@ -10,6 +10,7 @@ class Ai(commands.Cog):
         self.bot = bot
         
     @commands.command(name="generate", brief="Генерирует изображения", description="Генерирует изображения на основе текста на английском")
+    @commands.cooldown(1, 20, commands.BucketType.user)
     async def ai_gen_image(self, ctx, *, req: str):
         embed = disnake.Embed(
             title="Generate"
